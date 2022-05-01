@@ -27,6 +27,11 @@ nav{
 .nav-menu{
     list-style: none;
     display: flex;
+    align-items: center;
+}
+.botones{
+    display: flex;
+    align-items: center;
 }
 .item{
 
@@ -36,6 +41,8 @@ nav{
     margin: 10px;
     border-radius: 10px;
     transition: .3s ease;
+    display: flex;
+    align-items: center;
 }
 .item:hover{
     background-color: rgba(103, 103, 103, 0.336);
@@ -44,6 +51,105 @@ nav{
 
     
 }
+.bandera {
+    width: 28px;
+    margin: auto;
+}
+.switchBtn {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+}
+.switchBtn input {display:none;}
+.slider {
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding-left: 5px;
+    color: #fff;
+}
+.luna{
+    width: 30px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 43px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #8CE196;
+    padding-left: 40px;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #01aeed;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    left: -20px;
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}   
+.nav-menu li > ul {
+    margin-top: 14%;
+    left: 1px;
+    display:none;
+    position:absolute;
+    background: rgba(103, 103, 103, 0.336);
+    padding: 2%;
+    z-index: 2;
+    border-radius: 10px;
+    transition: .5s
+    
+    }
+    
+    .lenguaje{
+   
+    list-style: none;
+    } 
+    
+    .nav-menu li > ul li a{
+    width: 70px;
+    text-decoration: none;
+    margin: 0 0 0 5px;
+    display:block;
+    color: #fff;
+    } 
+    
+    .nav-menu li:hover > ul{
+    display:block;
+    width: max-content;
+    padding: 5%;
+    top: 35px;
+     }
+    
+   
+    
+    .lenguaje-item:hover{
+    border-color: #fff transparent transparent transparent;
+    }
+    
+  
+    
 main{
     width: 100vw;
     height: 100vh;
@@ -52,7 +158,7 @@ main{
 }
 .contenedor{
     display: flex;
-    padding-top: 8%;
+    padding-top: 7%;
     margin: 8%;
     margin-right: 0;
     height: 80vh;
