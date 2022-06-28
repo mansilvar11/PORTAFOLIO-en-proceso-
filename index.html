@@ -15,9 +15,26 @@
 <body>
     <!-- NAV -->
     <nav class="navegador">
-        <a href="">
+        <a href="index.html">
             <img src="./assets/logo.png" alt="" class="logo">
         </a>
+    <div class="bars-menu" id="bars-menu">
+            <input type="checkbox" class="check">
+            <i class="fas fa-bars bars" id="bars"></i>
+            <i class="fas fa-times equis" id="equis"></i>
+        <nav id="bars-nav">
+            <ul>
+                <li class="menu-item"><a class="item" href="#about">Sobre Mi</a></li>
+                <li class="menu-item"><a class="item" href="#proyectos">Proyectos</a></li>
+                <li class="menu-item"><a class="item" href="#contacto">Contacto</a></li>
+                <li class="menu-item item">
+                    <img src="./assets/spain.png" alt="" class="bandera">
+                    Español
+                    <ul><li class="lenguaje"><a class="lenguaje-item" href="./index-en.html">Inglés</a></li></ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
         <div class="botones">
             <label class="switchBtn">
                 <input type="checkbox">
@@ -32,7 +49,7 @@
                     Español
                     <ul><li class="lenguaje"><a class="lenguaje-item" href="./index-en.html">Inglés</a></li></ul>
                 </li>
-            </ul>
+            </ul> 
             
         </div>
     </nav>
@@ -57,7 +74,7 @@
                 <img src="./assets/mockup2.svg" alt="" class="tarjeta-1 up">
                 <img src="./assets/tarjeta1.svg" alt="" class="tarjeta-2 up">
                 <img src="./assets/mockup3.svg" alt="" class="tarjeta-3">
-                <img src="./assets/mockup4.svg" alt="" class="tarjeta-5">
+                <img src="./assets/mockup4.svg" alt="" class="tarjeta-5" id="last">
                 <img src="./assets/mockup5.svg" alt="" class="tarjeta-4" id="side">
                 </div>
             </div>

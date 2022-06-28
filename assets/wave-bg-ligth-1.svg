@@ -6,11 +6,10 @@
    fill="none"
    version="1.1"
    id="svg2292"
-   sodipodi:docname="wave-bg-ligth.svg"
+   sodipodi:docname="wave-bg-ligth-1.svg"
    inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -30,21 +29,9 @@
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer2" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs2290">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient5265">
-      <stop
-         style="stop-color:#06abff;stop-opacity:1;"
-         offset="0"
-         id="stop5261" />
-      <stop
-         style="stop-color:#06abff;stop-opacity:0;"
-         offset="1"
-         id="stop5263" />
-    </linearGradient>
     <linearGradient
        id="paint0_linear"
        x1="719.79"
@@ -67,8 +54,7 @@
        y1="49.4848"
        x2="719.407"
        y2="335.485"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(18.714555,39.223123)">
+       gradientUnits="userSpaceOnUse">
       <stop
          stop-color="#176AB1"
          id="stop2483" />
@@ -94,24 +80,6 @@
          stop-opacity="0"
          id="stop904" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5265"
-       id="linearGradient5269"
-       x1="-94"
-       y1="174.39799"
-       x2="1482.1899"
-       y2="174.39799"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5265"
-       id="linearGradient6889"
-       gradientUnits="userSpaceOnUse"
-       x1="-94"
-       y1="174.39799"
-       x2="1482.1899"
-       y2="174.39799" />
   </defs>
   <g
      inkscape:groupmode="layer"
@@ -122,7 +90,7 @@
        id="g2498"
        transform="matrix(0.97757968,0,0,0.81520572,29.224369,38.75715)">
       <path
-         d="m 1008.5986,278.51612 c -212.80204,-81.892 -215.88504,-115.223 -386.38504,-93.618 -170.5,21.604 -206.227,-119.835297 -371.615,-138.381417 -165.388305,-18.54608 -233.947745,1.82344 -313.070305,21.60412 0,87.171297 55,566.102297 55,566.102297 H 1538.7146 l -57.12,-430.672 c 0,0 -259.8,157.008 -472.996,74.965 z"
+         d="M 989.884,239.293 C 777.082,157.401 773.999,124.07 603.499,145.675 432.999,167.279 397.272,25.8397 231.884,7.29358 66.4957,-11.2525 -2.06374,9.11702 -81.1863,28.8977 c 0,87.1713 55,566.1023 55,566.1023 H 1520 l -57.12,-430.672 c 0,0 -259.8,157.008 -472.996,74.965 z"
          fill="url(#paint0_linear)"
          id="path2481"
          style="fill:url(#paint0_linear-9)" />
@@ -133,19 +101,19 @@
      id="layer2"
      inkscape:label="Layer 2">
     <g
-       style="fill:url(#linearGradient5269);fill-opacity:1"
+       style="fill:#268cf6;fill-opacity:0.59677422"
        id="g917"
-       transform="matrix(1,0,0,0.97107119,-29.9615,144.00224)">
+       transform="matrix(1,0,0,0.97107119,-29.961487,144.00224)">
       <path
          d="m 1228.49,36.985 c -212.8,-81.8929 -387.893,-4.9796 -609.876,14 -221.982,18.9796 -208.612,-4.9539 -374,-23.5 C 79.2262,8.93887 -14.8774,107.033 -94,126.814 c 0,87.171 0,221.982 0,221.982 H 1482.19 L 1463.66,113.91 c 0,0 -21.98,5.118 -235.17,-76.925 z"
          fill="url(#paint0_linear)"
          id="path900"
-         style="fill:url(#linearGradient6889);fill-opacity:1" />
+         style="fill:#268cf6;fill-opacity:0.59677422" />
     </g>
     <path
-       d="M 925.35704,275.08229 C 717.32613,215.21958 687.66832,213.01936 590.04721,239.99483 c -97.62209,26.97554 -153.94241,25.182 -315.62235,11.625 -161.67995,-13.557 -247.34379,3.71174 -324.692338,18.17115 0,64.27796 -4.89e-4,425.13279 -4.89e-4,425.13279 H 1437.7065 l -4.008,-440.30681 c 0,0 -299.9313,80.43808 -508.34146,20.46533 z"
+       d="M 954.47764,242.05222 C 746.44673,182.18951 716.78892,179.98929 619.16781,206.96476 c -97.62209,26.97554 -153.94241,25.182 -315.62235,11.625 -161.67995,-13.557 -247.343789,3.71174 -324.692337,18.17115 0,64.27796 -4.89e-4,425.13279 -4.89e-4,425.13279 H 1466.8271 l -4.008,-440.30681 c 0,0 -299.9313,80.43808 -508.34146,20.46533 z"
        fill="url(#paint0_linear)"
        id="path2283"
-       style="fill:#b2e2ed;fill-opacity:1;stroke-width:0.84534" />
+       style="fill:#e8f4f7;fill-opacity:1;stroke-width:0.84534" />
   </g>
 </svg>
