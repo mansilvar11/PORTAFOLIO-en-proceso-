@@ -5,6 +5,8 @@
     
 }
 body{
+    width: 100vw;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: rgb(22, 22, 67);
 }
@@ -131,60 +133,7 @@ min-height: 48px;
     width: 28px;
     margin: auto;
 }
-.switchBtn {
-    position: relative;
-    display: inline-block;
-    width: 80px;
-    height: 34px;
-}
-.switchBtn input {display:none;}
-.slider {
-    margin-left: 5px;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-    padding-left: 5px;
-    color: #fff;
-}
-.luna{
-    width: 30px;
-}
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 43px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-input:checked + .slider {
-    background-color: #8CE196;
-    padding-left: 40px;
-}
-input:focus + .slider {
-    box-shadow: 0 0 1px #01aeed;
-}
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-    left: -20px;
-}
-.slider.round {
-    border-radius: 34px;
-}
-.slider.round:before {
-    border-radius: 50%;
-}   
+
 .nav-menu li > ul {
     margin-top: 14%;
     left: 1px;
@@ -233,19 +182,23 @@ main{
 }
 .contenedor{
     display: flex;
+    flex-wrap: wrap;
     padding-top: 7%;
     margin: 8%;
     margin-right: 0;
-    height: 80vh;
+    height: max-content;
+    
+    
 }
 .present{
 box-sizing: border-box;
-width: 40%;
+width: 90vw;
 height: 100%;
 
 }
 .present> h1, h2, .descrip, #boton-descarga{
     margin: 5%;
+    width: 90vw;
     color: aliceblue;
 }
 .titulo{
@@ -295,10 +248,10 @@ height: 100%;
     
     width: 60%;
     height: 80%;
-    position: relative;
+    position:static;
     transition: .3s all;
     perspective: 800px;
-    perspective-origin: 80% 50%;
+    perspective-origin: 0% 50%;
 }
 .cards:hover img{
     transform: none;
@@ -351,6 +304,7 @@ height: 100%;
 }
 .tarjeta-3{
     position: absolute;
+    z-index: -1;
     width: 700px;
     height: 400px;
     left: 37px;
@@ -404,9 +358,7 @@ height: 100%;
 box-sizing: border-box;
 display: flex;
 margin-top: 5rem;
-margin: 10%;
-border-bottom-right-radius: 20px;
-border-top-right-radius: 20px;
+justify-content: center;
 }
 .me{
     width: 350px;
@@ -418,8 +370,8 @@ border-top-right-radius: 20px;
     background-color: rgba(79, 79, 79, 0.239);
     background-size: contain;
     backdrop-filter: blur(6px);
-    max-width: max-content;
-    margin: 0 0% 0 5%;
+    max-width: 95%;
+    margin: 0;
     padding: 0 3% 3% 3%;
     border-radius: 20px;
 }
@@ -456,19 +408,22 @@ border-top-right-radius: 20px;
     }
 }
 .proyectos{
+    width: 100%;
+    justify-content: center;
     margin-top: 10rem;
     background-image: url(./assets/wave-bg-2.svg);
-    
     background-repeat: no-repeat;
     background-size:cover;
     
 }
 .pro{
-    text-align: center;
+    margin: auto;
+    margin-bottom: 5%;
     font-size: 2.4rem;
     color: whitesmoke;
 }
 .prop{
+    margin-top: 4%;
     font-size: 1.4rem;
     text-align: center;
     color: whitesmoke;
@@ -479,14 +434,13 @@ border-top-right-radius: 20px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
-    width: 80vw;
     max-width:none;
     align-items:center;
     padding:4%;
    
 }
 .proyectos-cards{
-    margin: 1%;
+    margin: 5%;
     width: 100%;
     max-width: 400px;
     min-width: 60px;
@@ -544,18 +498,19 @@ border-top-right-radius: 20px;
     max-width: 1000px;
     background-color: rgba(202, 202, 202, 0.212);
     backdrop-filter: blur(20px);
-    padding: 40px;
+    padding: 20px;
     margin: 40px, auto;
     box-shadow: 0, 1px, 2px rgba(0, 0, 0, 0.428);
 }
 .contenido{
     display: flex;
+    flex-wrap: wrap-reverse;
     width: 100%;
     overflow: hidden;
 }
 .contenido info, 
 .contenido .formulario{
-width: 50%;
+width: 100%;
 }
 .info .col{
     width: 100%;
@@ -567,6 +522,7 @@ width: 50%;
 }
 .info {
     padding-left: 10px;
+    margin: auto;
 }
 .info .col .icono{
     color: rgba(80, 151, 232, 0.973);
@@ -576,9 +532,8 @@ width: 50%;
 color: rgb(254, 254, 254);
 }
 .info .redes{
-    overflow: hidden;
     width: 100%;
-    padding-left: 25px;
+    margin-left: 8%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 10% ;
@@ -631,7 +586,8 @@ color: rgba(29, 94, 200, 0.835);
     padding: 20px 40px;
     border: transparent;
     background-color: rgb(87, 147, 243);
-    margin-left: 15px;
+    margin-left: 35%;
+    margin-bottom: 5%;
     color: whitesmoke;
     transition: .3s all;
 }
@@ -681,7 +637,7 @@ footer{ display: flex;
         display: flex;
     }
     .background-final{
-        height: 70vh;
+        height: 90vh;
         background-image: url(./assets/wave-bg.svg);
         background-repeat: no-repeat;
         background-position-y: bottom;
@@ -720,22 +676,23 @@ footer{ display: flex;
       }
       .contenedor{
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         margin: 3%;
-        margin-top: 10%;
+        margin-top: 1%;
         margin-right: 0;
-        height: 50vh;
+        height: 40vh;
     
     }
     .present{
     box-sizing: border-box;
-    width: 20%;
+    width: 90%;
     height: max-content;
     
     }
     .present> h1, h2, .descrip, #boton-descarga{
-        margin: 5%;
-        margin-top: 10%;
+        margin: 0%;
+        margin-top: 0%;
+        text-align: center;
         color: aliceblue;
     }
     .titulo{
@@ -749,19 +706,21 @@ footer{ display: flex;
 
 #boton-descarga{
     text-decoration: none;
+    margin: auto;
+    margin-top: 5%;
     padding-left: 5px;
-    max-width: 60px;
-    height: 25px;
+    width: 120px;
+    height: 50px;
     border-radius: 40px;
- 
 }
 .hoja{
     display: flex;
-    width: 15px;
+    width: 30px;
 }
 .hojita{
     margin: 10%;
-    width: 15px;
+    width: 30px;
+    margin-right: 50%;
 }
 .descarga{
     
@@ -769,11 +728,10 @@ footer{ display: flex;
 
 }
 .descarga p{
-    font-size: 5px;
+    font-size: 10px;
 }
 .cards{
-    margin-top: 10%;
-    width: 30%;
+    width: 100%;
     height: max-content;
     position:static;
     transition: .3s all;
