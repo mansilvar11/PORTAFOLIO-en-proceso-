@@ -5,8 +5,7 @@
     
 }
 body{
-    width: 100vw;
-    overflow-x: hidden;
+    overflow-x:hidden ;
     scroll-behavior: smooth;
     background-color: rgb(22, 22, 67);
 }
@@ -133,7 +132,60 @@ min-height: 48px;
     width: 28px;
     margin: auto;
 }
-
+.switchBtn {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+}
+.switchBtn input {display:none;}
+.slider {
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding-left: 5px;
+    color: #fff;
+}
+.luna{
+    width: 30px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 43px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #8CE196;
+    padding-left: 40px;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #01aeed;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    left: -20px;
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}   
 .nav-menu li > ul {
     margin-top: 14%;
     left: 1px;
@@ -186,19 +238,16 @@ main{
     padding-top: 7%;
     margin: 8%;
     margin-right: 0;
-    height: max-content;
-    
-    
+    height: 80vh;
 }
 .present{
 box-sizing: border-box;
-width: 90vw;
+width: 40%;
 height: 100%;
 
 }
 .present> h1, h2, .descrip, #boton-descarga{
     margin: 5%;
-    width: 90vw;
     color: aliceblue;
 }
 .titulo{
@@ -248,10 +297,10 @@ height: 100%;
     
     width: 60%;
     height: 80%;
-    position:static;
+    position: relative;
     transition: .3s all;
     perspective: 800px;
-    perspective-origin: 0% 50%;
+    perspective-origin: 80% 50%;
 }
 .cards:hover img{
     transform: none;
@@ -304,7 +353,6 @@ height: 100%;
 }
 .tarjeta-3{
     position: absolute;
-    z-index: -1;
     width: 700px;
     height: 400px;
     left: 37px;
@@ -358,7 +406,9 @@ height: 100%;
 box-sizing: border-box;
 display: flex;
 margin-top: 5rem;
-justify-content: center;
+margin: 10%;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
 }
 .me{
     width: 350px;
@@ -370,8 +420,8 @@ justify-content: center;
     background-color: rgba(79, 79, 79, 0.239);
     background-size: contain;
     backdrop-filter: blur(6px);
-    max-width: 95%;
-    margin: 0;
+    max-width: max-content;
+    margin: 0 0% 0 5%;
     padding: 0 3% 3% 3%;
     border-radius: 20px;
 }
@@ -408,22 +458,19 @@ justify-content: center;
     }
 }
 .proyectos{
-    width: 100%;
-    justify-content: center;
     margin-top: 10rem;
     background-image: url(./assets/wave-bg-2.svg);
+    
     background-repeat: no-repeat;
     background-size:cover;
     
 }
 .pro{
-    margin: auto;
-    margin-bottom: 5%;
+    text-align: center;
     font-size: 2.4rem;
     color: whitesmoke;
 }
 .prop{
-    margin-top: 4%;
     font-size: 1.4rem;
     text-align: center;
     color: whitesmoke;
@@ -434,13 +481,14 @@ justify-content: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
+    width: 80vw;
     max-width:none;
     align-items:center;
     padding:4%;
    
 }
 .proyectos-cards{
-    margin: 5%;
+    margin: 1%;
     width: 100%;
     max-width: 400px;
     min-width: 60px;
@@ -498,19 +546,18 @@ justify-content: center;
     max-width: 1000px;
     background-color: rgba(202, 202, 202, 0.212);
     backdrop-filter: blur(20px);
-    padding: 20px;
+    padding: 40px;
     margin: 40px, auto;
     box-shadow: 0, 1px, 2px rgba(0, 0, 0, 0.428);
 }
 .contenido{
     display: flex;
-    flex-wrap: wrap-reverse;
     width: 100%;
     overflow: hidden;
 }
 .contenido info, 
 .contenido .formulario{
-width: 100%;
+width: 50%;
 }
 .info .col{
     width: 100%;
@@ -522,7 +569,6 @@ width: 100%;
 }
 .info {
     padding-left: 10px;
-    margin: auto;
 }
 .info .col .icono{
     color: rgba(80, 151, 232, 0.973);
@@ -532,8 +578,9 @@ width: 100%;
 color: rgb(254, 254, 254);
 }
 .info .redes{
+    overflow: hidden;
     width: 100%;
-    margin-left: 8%;
+    padding-left: 25px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 10% ;
@@ -586,8 +633,7 @@ color: rgba(29, 94, 200, 0.835);
     padding: 20px 40px;
     border: transparent;
     background-color: rgb(87, 147, 243);
-    margin-left: 35%;
-    margin-bottom: 5%;
+    margin-left: 15px;
     color: whitesmoke;
     transition: .3s all;
 }
@@ -628,10 +674,12 @@ footer{ display: flex;
     filter: brightness(130%);
 }
 
+/* MEDIA QWERTYSSSSS */
 
 @media only screen and (max-width: 600px) {
     body{
         overflow-x: hidden;
+        width: 100vw;
     }
     .bars-menu{
         display: flex;
@@ -675,6 +723,7 @@ footer{ display: flex;
         background-position: cover;
       }
       .contenedor{
+        justify-content: center;
         display: flex;
         flex-wrap: wrap;
         margin: 3%;
@@ -685,12 +734,13 @@ footer{ display: flex;
     }
     .present{
     box-sizing: border-box;
-    width: 90%;
+    width: 95%;
     height: max-content;
+    justify-content: center;
     
     }
     .present> h1, h2, .descrip, #boton-descarga{
-        margin: 0%;
+        margin: 1%;
         margin-top: 0%;
         text-align: center;
         color: aliceblue;
@@ -732,6 +782,7 @@ footer{ display: flex;
 }
 .cards{
     width: 100%;
+    margin-left: 10%;
     height: max-content;
     position:static;
     transition: .3s all;
@@ -850,25 +901,317 @@ margin: 5%;
 
 .about-me{
     color: whitesmoke;
-    max-width: max-content;
+    justify-content: center;
     padding: 0 3% 3% 3%;
     background: none;
     margin: none;
 }
 .about h2{
+    margin: 5%;
     font-size: 1.5rem;
 }
 .about p{
     font-size: 1rem;
 }
+.me{
+    margin: auto;
+}
 .pro{
+    margin-bottom: 5%;
     text-align: center;
     font-size: 2.4rem;
     color: whitesmoke;
 }
 .prop{
+    margin: 5%;
     font-size: 1rem;
     text-align: center;
     color: whitesmoke;
+}
+.proyectos-cards{
+    margin: 4%;
+}
+.contenido{
+flex-wrap: wrap-reverse;
+}
+.contenido .formulario{
+    width: 90%;
+}
+#enviar{
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+.redes{
+    margin-left: -10%;
+}
+}
+@media only screen and (min-width:601) and (max-width: 900px) {
+    body{
+        overflow-x: hidden;
+        width: 100vw;
+    }
+    .bars-menu{
+        display: flex;
+    }
+    .background-final{
+        height: 90vh;
+        background-image: url(./assets/wave-bg.svg);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-size:  contain;
+    }
+    nav{
+        background-color: rgba(27, 27, 27, 0.458);
+        z-index: 8;
+        position: sticky;
+        display: flex;
+        margin: 0;
+        padding: 5px;
+        top: 0;
+        height: 70px;
+        width: 100%;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .logo{
+        height: 40px;
+    }
+    .nav-menu{
+        list-style: none;
+        display: none;
+        align-items: center;
+    }
+
+    .botones{
+        display: none;
+    }
+ 
+      main{
+        width: 100vw;
+        height: 100%;
+        background-position: cover;
+      }
+      .contenedor{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 3%;
+        margin-top: 1%;
+        margin-right: 0;
+        height: 40vh;
+    
+    }
+    .present{
+    box-sizing: border-box;
+    width: 95%;
+    height: max-content;
+    justify-content: center;
+    
+    }
+    .present> h1, h2, .descrip, #boton-descarga{
+        margin: 1%;
+        margin-top: 0%;
+        text-align: center;
+        color: aliceblue;
+    }
+    .titulo{
+        font-size: 16px;
+    
+    }
+    .prog{
+        font-size: 18px;
+        color:whitesmoke
+    }
+
+#boton-descarga{
+    text-decoration: none;
+    margin: auto;
+    margin-top: 5%;
+    padding-left: 5px;
+    width: 120px;
+    height: 50px;
+    border-radius: 40px;
+}
+.hoja{
+    display: flex;
+    width: 30px;
+}
+.hojita{
+    margin: 10%;
+    width: 30px;
+    margin-right: 50%;
+}
+.descarga{
+    
+    color: rgb(15, 8, 66);
+
+}
+.descarga p{
+    font-size: 10px;
+}
+.cards{
+    margin-top: -150px;
+    width: 90%;
+    height: max-content;
+    position:static;
+    transition: .3s all;
+    perspective: 800px;
+    perspective-origin: 80% 50%;
+}
+.cards:hover img{
+    transform: none;
+
+}
+.cards:hover .up{
+    top: -10px;
+}
+.cards:hover #side{
+    left: 15px;
+    top: 130px;
+    
+}
+.cards:hover #last{
+    transform: translateX(15px);
+    
+}
+.tarjeta-2:hover{
+    filter: brightness(130%);
+}
+.tarjeta-2{
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    left: 40px;
+    top: 25px;
+    background: linear-gradient(200.42deg, rgb(132, 79, 252) 13.57%, rgb(73, 30, 184) 98.35%);
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: rgb(99 30 187 / 50%) 0px 16.3881px 32.7761px;
+    backdrop-filter: blur(21.8507px);
+    border-radius: 8px;
+    transition: all .7s;
+    z-index: 2;
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(13deg) rotateY(-20deg) rotateZ(0deg) translateX(3px) translateY(0px) translateZ(32px) skewX(0deg) skewY(0deg);
+}
+.tarjeta-1:hover{
+    filter: brightness(120%);
+}
+.tarjeta-1{
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    left:135px;
+    top: 25px;
+    background: linear-gradient(184.82deg, rgb(55, 207, 197) 3.89%, rgb(132, 233, 228) 96.11%);
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: rgb(0 0 0 / 10%) 0px 8.19119px 16.3824px, rgb(0 0 0 / 15%) 0px 16.3824px 32.7648px;
+    backdrop-filter: blur(21.8432px);
+    border-radius: 8px;
+    transition: all .5s;
+    z-index: 2;
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(13deg) rotateY(-20deg) rotateZ(0deg) translateX(3px) translateY(0px) translateZ(32px) skewX(0deg) skewY(0deg);
+}
+.tarjeta-3:hover{
+    filter: brightness(140%);
+}
+.tarjeta-3{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 40px;
+    top: 30px;
+    background: rgba(23, 12, 61, 0.5);
+    box-shadow: rgb(255 255 255 / 20%) 0px 0px 0px 0.5px inset;
+    backdrop-filter: blur(27.3844px);
+    border-radius: 4px;
+    transition: all .5s;
+    transform:  scaleX(1) scaleY(1) scaleZ(1) rotateX(13deg) rotateY(-20deg) rotateZ(0deg) translateX(3px) translateY(0px) translateZ(32px) skewX(0deg) skewY(0deg);
+}
+.tarjeta-4:hover{
+    filter: brightness(140%);
+
+}
+.tarjeta-4{
+    position: absolute;
+    width: 180px;
+    height: 130px;
+    left: 44px;
+    top: 130px;
+    background: rgba(39, 20, 62, 0.3);
+    box-shadow: rgb(255 255 255 / 20%) 0px 0px 0px 0.5px inset;
+    backdrop-filter: blur(20px);
+    border-radius: 4px;
+    transition: .8s all;
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(13deg) rotateY(-20deg) rotateZ(0deg) translateX(3px) translateY(0px) translateZ(32px) skewX(0deg) skewY(0deg);
+}
+.tarjeta-5:hover{
+    filter: brightness(140%);
+} 
+.tarjeta-5{
+    position: absolute;
+    width: 180px;
+    height: 130px;
+    left: 190px;
+    top: 140px;
+    background: rgba(39, 20, 62, 0.3);
+    box-shadow: rgb(255 255 255 / 20%) 0px 0px 0px 0.5px inset;
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    z-index: 1;
+    transition: all .7s;
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(13deg) rotateY(-20deg) rotateZ(0deg) translateX(3px) translateY(0px) translateZ(32px) skewX(0deg) skewY(0deg);
+}
+.about{
+display: flex;
+flex-wrap: wrap;
+margin: 5%;
+
+}
+
+
+.about-me{
+    color: whitesmoke;
+    justify-content: center;
+    padding: 0 3% 3% 3%;
+    background: none;
+    margin: none;
+}
+.about h2{
+    margin: 5%;
+    font-size: 1.5rem;
+}
+.about p{
+    font-size: 1rem;
+}
+.me{
+    margin: auto;
+}
+.pro{
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 2.4rem;
+    color: whitesmoke;
+}
+.prop{
+    margin: 5%;
+    font-size: 1rem;
+    text-align: center;
+    color: whitesmoke;
+}
+.proyectos-cards{
+    margin: 4%;
+}
+.contenido{
+flex-wrap: wrap-reverse;
+}
+.contenido .formulario{
+    width: 90%;
+}
+#enviar{
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+.redes{
+    margin-left: -10%;
 }
 }
